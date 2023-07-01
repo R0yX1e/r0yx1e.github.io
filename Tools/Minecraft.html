@@ -13,18 +13,20 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://r0yx1e.github.io/archives/2023/"/>
+    <link rel="canonical" href="https://r0yx1e.github.io/tools/minecraft.html"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="分享一些技术贴">
+        <meta name="description" content="计算          function k(m){                 m&#x3D;-m                 return Math.tan(m &#x2F; 180 * Math.PI);         }         function clicknow(){                 var x1,z1,xz1,x2,z2,xz2,t1,t2,x,z;">
 <meta property="og:type" content="website">
-<meta property="og:title" content="大大的原木墩">
-<meta property="og:url" content="https://r0yx1e.github.io/archives/2023/index.html">
+<meta property="og:title" content="Minecraft 寻找地牢">
+<meta property="og:url" content="https://r0yx1e.github.io/Tools/Minecraft.html">
 <meta property="og:site_name" content="大大的原木墩">
-<meta property="og:description" content="分享一些技术贴">
+<meta property="og:description" content="计算          function k(m){                 m&#x3D;-m                 return Math.tan(m &#x2F; 180 * Math.PI);         }         function clicknow(){                 var x1,z1,xz1,x2,z2,xz2,t1,t2,x,z;">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-07-01T06:31:35.000Z">
+<meta property="article:modified_time" content="2023-07-01T07:44:22.553Z">
 <meta property="article:author" content="Roy Xie">
 <meta property="article:tag" content="博客,Blog,Tech,Develop">
 <meta name="twitter:card" content="summary">
@@ -39,7 +41,7 @@
     
     <title>
         
-            归档: 2023 -
+            Minecraft 寻找地牢 -
         
         大大的原木墩
     </title>
@@ -302,30 +304,49 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="archive-container ">
+    <div class="page-template-container">
         
-<div class="archive-list-container">
-    
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2023</span>
-                <span class="archive-year-post-count">[1]</span>
-            </div>
-            <ul class="article-list">
-              
-              <li class="article-item" date-is='06-30'>
-                <a href="/2023/06/30/%E6%B5%B7%E4%BF%A1-VIDDA-%E6%8F%90%E6%9D%83/">
-                  <span class="article-title">海信 VIDDA 提权</span>
-                </a>
-              </li>
-              
-            </ul>
-        </section>
-    
-</div>
+        
+        
+        <div class="page-template-content markdown-body">
+            
+                <input id="x1" value="x1" onfocus="this.value=''">
+<input id="z1" value="z1" onfocus="this.value=''">
+<input id="xz1" value="角度1" onfocus="this.value=''">
+<br>
+<input id="x2" value="x2" onfocus="this.value=''">
+<input id="z2" value="z2" onfocus="this.value=''">
+<input id="xz2" value="角度2" onfocus="this.value=''">
 
+<p><button type="button" id="end" onclick="clicknow()">计算</button></p>
+<script>
+        function k(m){
+                m=-m
+                return Math.tan(m / 180 * Math.PI);
+        }
+        function clicknow(){
+                var x1,z1,xz1,x2,z2,xz2,t1,t2,x,z;
+                x1=document.getElementById("x1").value;
+                x2=document.getElementById("x2").value;
+                z1=document.getElementById("z1").value;
+                z2=document.getElementById("z2").value;
+                xz1=document.getElementById("xz1").value;
+                xz2=document.getElementById("xz2").value;
+                t1 = x1 - k(xz1) * z1;
+                t2 = x2 - k(xz2) * z2;
+                z=(t2-t1)/(k(xz1)-k(xz2));
+                x=k(xz1)*z+t1;
+                document.getElementById("end").innerHTML = x +',~,' + z;
+        }
+</script>
+            
+        </div>
+        <div class="page-template-comments">
+            
+        </div>
     </div>
 </div>
+
 
                 
 
